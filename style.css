@@ -4,8 +4,6 @@
 }
 
 header {
-  margin: 20px;
-  padding: 20px;
   background-color: black;
   color: white;
   width: 100%;
@@ -13,4 +11,9 @@ header {
   font-family: sans-serif;
   font-size: 20px;
   text-align: center;
+}
+
+header > p {
+ margin: 20px;
+ padding: 20px;
 }
