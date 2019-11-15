@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+background-color: grey;
 }
 
 header {
@@ -15,4 +16,10 @@ header {
 
 header > p {
  padding: 20px;
+}
+
+h2 {
+color: white;
+font-size: 48px;
+text-align: center;
 }
