@@ -23,8 +23,9 @@ header > p {
 }
 
 h2 {
+margin: 20%;
 display: box;
-color: white;
+color: black;
 font-size: 36px;
 text-align: center;
 padding: 30%;
