@@ -6,7 +6,6 @@
 body {
   margin: 0px;
   padding: 0px;
-background-color: #666699;
 }
 
 header {
@@ -24,10 +23,13 @@ header > p {
 }
 
 h2 {
+display: box;
 color: white;
 font-size: 36px;
 text-align: center;
 padding: 30%;
+border: solid 5px black;
+border-radius: 5px;
 }
 
 footer {
