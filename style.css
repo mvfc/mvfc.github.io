@@ -44,37 +44,34 @@ header p {
     color: #777;
 }
 
-nav ul {
-    list-style: none;
+nav {
+    position: sticky;       /* Makes the nav stick to the top */
+    top: 0;                 /* Stick at the very top of the viewport */
+    background-color: #ffffff; /* Background color to keep it visible */
+    z-index: 1000;          /* Ensure it stays on top of other content */
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
-    padding: 0;
-    gap: 30px;
-    margin-top: 20px;
+    gap: 20px;              /* Space between buttons */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+    border-bottom: 1px solid #e0e0e0;         /* Optional: Adds a border for clarity */
 }
 
-nav li {
-    margin: 0;
-}
-
+/* Navigation Buttons */
 nav a {
-    background-color: #fff;
-    color: #333;
-    padding: 15px 25px;
-    font-size: 1.1rem;
-    border-radius: 10px;
-    border: 2px solid #ddd;
+    background-color: #007BFF;  /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
     text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
 }
 
+/* Hover Effect */
 nav a:hover {
-    background-color: #f2f2f2;
-    border-color: #2c7ed0;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    color: #2c7ed0;
+    background-color: #0056b3;  /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift effect */
 }
 
 section {
