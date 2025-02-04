@@ -44,36 +44,39 @@ header p {
     color: #777;
 }
 
-nav {
-    position: sticky;        /* Keeps the navbar fixed at the top */
-    top: 0;                  /* Stick to the top edge */
-    background-color: #f8f9fa; /* Light background for better contrast */
-    z-index: 1000;           /* Ensure it's above other content */
-    padding: 10px 0;         /* Vertical padding */
-    display: flex;           /* Display items in a row */
-    justify-content: center; /* Center the nav items horizontally */
-    gap: 20px;               /* Space between nav items */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
-    border-bottom: 1px solid #ddd;           /* Light border for clarity */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 30px;
+    margin-top: 20px;
 }
 
-/* Navigation Buttons - Restoring Original Style */
+nav li {
+    margin: 0;
+}
+
 nav a {
-    background-color: transparent;  /* No background color */
-    color: #333;                    /* Dark text color */
-    padding: 10px 15px;             /* Space around the text */
-    border-radius: 5px;             /* Slightly rounded corners */
-    text-decoration: none;          /* Remove underline */
-    font-weight: normal;            /* Regular font weight */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #fff;
+    color: #333;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Hover Effect */
 nav a:hover {
-    background-color: #e0e0e0; /* Light gray background on hover */
-    color: #000;               /* Darker text on hover */
+    background-color: #f2f2f2;
+    border-color: #2c7ed0;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    color: #2c7ed0;
 }
-
 
 section {
     padding: 40px 0;
