@@ -132,3 +132,32 @@ footer {
 footer p {
     font-size: 1rem;
 }
+
+.linkedin-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0077b5;  /* LinkedIn's brand color */
+    color: white;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.linkedin-button:hover {
+    background-color: #005f8e;  /* Darker shade of LinkedIn blue on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.linkedin-icon {
+    width: 20px;  /* Control the size of the LinkedIn icon */
+    height: auto;
+    margin-right: 8px;  /* Space between icon and text */
+}
+
+.linkedin-button span {
+    font-size: 1rem;  /* Adjust text size if needed */
+}
