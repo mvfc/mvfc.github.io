@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    width: 80%;  /* Limit width to 80% of the screen */
+    width: 50%;  /* Limit width to 80% of the screen */
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -153,7 +153,7 @@ footer p {
 
 .about-card, .contact-card {
     flex: 1;
-    width: 30%
+    width: 20%
     box-sizing: border-box;
 }
 
