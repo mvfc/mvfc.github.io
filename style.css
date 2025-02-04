@@ -24,13 +24,14 @@ body {
 }
 
 header {
-    background: #fff;
-    color: #333;
-    padding: 60px 0;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 40px;
+    position: sticky;       /* Makes the entire header stick to the top */
+    top: 0;                 /* Sticks at the very top */
+    background-color: #ffffff; /* White background to keep it visible */
+    z-index: 1000;          /* Ensures it stays above other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+    padding: 20px 0;
+    text-align: center;     /* Center-align title and nav items */
+    border-bottom: 1px solid #e0e0e0; /* Optional border for clarity */
 }
 
 header h1 {
