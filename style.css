@@ -8,12 +8,16 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9;
     color: #333;
-    padding: 0 10%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
-    max-width: 1200px;  /* Limit content width */
+    width: 50%;  /* Limit width to 50% of the screen */
+    max-width: 1200px;  /* Ensure it doesn't go over a certain width */
     margin: 0 auto;
+    padding: 20px;
 }
 
 header {
@@ -195,7 +199,7 @@ footer p {
     }
 
     .container {
-        padding: 0 20px;  /* Ensure container has some margin */
+        width: 90%;  /* Allow more width on smaller screens */
     }
 
     nav ul {
