@@ -8,20 +8,22 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    padding: 0 10%;
 }
 
 .container {
-    width: 85%;
+    max-width: 1200px;  /* Limit content width */
     margin: 0 auto;
 }
 
 header {
-    background: #fff;  /* White background for a clean minimal look */
+    background: #fff;
     color: #333;
     padding: 60px 0;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #ddd;  /* Light border for definition */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
 }
 
 header h1 {
@@ -41,7 +43,7 @@ nav ul {
     justify-content: center;
     padding: 0;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 nav li {
@@ -49,22 +51,23 @@ nav li {
 }
 
 nav a {
-    background-color: #fff;  /* White background for buttons */
+    background-color: #fff;
     color: #333;
     padding: 15px 25px;
     font-size: 1.1rem;
-    border-radius: 10px;  /* Rounded corners for a more elegant feel */
-    border: 2px solid #ddd;  /* Soft border for card effect */
+    border-radius: 10px;
+    border: 2px solid #ddd;
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 nav a:hover {
-    background-color: #f2f2f2;  /* Light gray background on hover */
-    border-color: #2c7ed0;  /* Highlight border color */
-    transform: translateY(-4px);  /* Lift effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);  /* Slightly stronger shadow */
+    background-color: #f2f2f2;
+    border-color: #2c7ed0;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    color: #2c7ed0;
 }
 
 section {
@@ -117,7 +120,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #2c7ed0;  /* Accent color for links */
+    color: #2c7ed0;
 }
 
 footer {
@@ -133,10 +136,11 @@ footer p {
     font-size: 1rem;
 }
 
+/* Specific Styles for LinkedIn Button */
 .linkedin-button {
     display: inline-flex;
     align-items: center;
-    background-color: #0077b5;  /* LinkedIn's brand color */
+    background-color: #0096ff;  /* Lighter LinkedIn blue */
     color: white;
     padding: 8px 15px;
     font-size: 1rem;
@@ -147,25 +151,22 @@ footer p {
 }
 
 .linkedin-button:hover {
-    background-color: #005f8e;  /* Darker shade of LinkedIn blue on hover */
+    background-color: #0077b5;  /* LinkedIn blue on hover */
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .linkedin-icon {
-    width: 20px;  /* Control the size of the LinkedIn icon */
+    width: 20px;
     height: auto;
-    margin-right: 8px;  /* Space between icon and text */
+    margin-right: 8px;
 }
 
-.linkedin-button span {
-    font-size: 1rem;  /* Adjust text size if needed */
-}
-
+/* Specific Styles for Email Button */
 .email-button {
     display: inline-flex;
     align-items: center;
-    background-color: #0078d4;  /* Outlook's brand color */
+    background-color: #0078d4;
     color: white;
     padding: 8px 15px;
     font-size: 1rem;
@@ -176,17 +177,40 @@ footer p {
 }
 
 .email-button:hover {
-    background-color: #005a8e;  /* Darker shade of Outlook blue on hover */
+    background-color: #005a8e;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .outlook-icon {
-    width: 20px;  /* Control the size of the Outlook icon */
+    width: 20px;
     height: auto;
-    margin-right: 8px;  /* Space between icon and text */
+    margin-right: 8px;
 }
 
-.email-button span {
-    font-size: 1rem;  /* Adjust text size if needed */
+/* For Mobile and Small Screens */
+@media (max-width: 768px) {
+    body {
+        padding: 0 5%;  /* Reduce padding for small screens */
+    }
+
+    .container {
+        padding: 0 20px;  /* Ensure container has some margin */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        padding: 12px 20px;
+    }
+
+    .linkedin-button,
+    .email-button {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
 }
