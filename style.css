@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f7f7f7;
+    background-color: #f4f4f9;
     color: #333;
 }
 
@@ -16,11 +16,11 @@ body {
 }
 
 header {
-    background: #333;
+    background: #1e1e2f;  /* Darker background for the header */
     color: #fff;
     padding: 40px 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-bottom: 4px solid #1e90ff;
+    border-bottom: 4px solid #1e90ff;  /* Accent color */
 }
 
 header .logo {
@@ -48,13 +48,13 @@ nav li {
 }
 
 nav a {
-    color: #fff;
+    color: #f4f4f9;  /* Lighter text color for contrast */
     text-decoration: none;
     font-size: 1.1rem;
 }
 
 nav a:hover {
-    color: #1e90ff;
+    color: #1e90ff;  /* Blue accent on hover */
 }
 
 section {
@@ -107,11 +107,11 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #1e90ff;
+    color: #1e90ff;  /* Accent color for links */
 }
 
 footer {
-    background: #333;
+    background: #1e1e2f;
     color: #fff;
     padding: 20px 0;
     text-align: center;
