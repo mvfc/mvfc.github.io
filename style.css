@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    width: 50%;  /* Limit width to 80% of the screen */
+    width: 50%;  /* Changed width to 50% */
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -149,11 +149,12 @@ footer p {
     gap: 30px;
     justify-content: space-between;
     margin-bottom: 40px;
+    flex-wrap: wrap;  /* Ensure they can wrap on smaller screens */
 }
 
 .about-card, .contact-card {
     flex: 1;
-    width: 20%
+    min-width: 280px;  /* Ensure minimum width on small screens */
     box-sizing: border-box;
 }
 
