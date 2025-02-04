@@ -45,34 +45,35 @@ header p {
 }
 
 nav {
-    position: sticky;       /* Makes the nav stick to the top */
-    top: 0;                 /* Stick at the very top of the viewport */
-    background-color: #ffffff; /* Background color to keep it visible */
-    z-index: 1000;          /* Ensure it stays on top of other content */
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;              /* Space between buttons */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
-    border-bottom: 1px solid #e0e0e0;         /* Optional: Adds a border for clarity */
+    position: sticky;        /* Keeps the navbar fixed at the top */
+    top: 0;                  /* Stick to the top edge */
+    background-color: #f8f9fa; /* Light background for better contrast */
+    z-index: 1000;           /* Ensure it's above other content */
+    padding: 10px 0;         /* Vertical padding */
+    display: flex;           /* Display items in a row */
+    justify-content: center; /* Center the nav items horizontally */
+    gap: 20px;               /* Space between nav items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+    border-bottom: 1px solid #ddd;           /* Light border for clarity */
 }
 
-/* Navigation Buttons */
+/* Navigation Buttons - Restoring Original Style */
 nav a {
-    background-color: #007BFF;  /* Button color */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    font-weight: bold;
+    background-color: transparent;  /* No background color */
+    color: #333;                    /* Dark text color */
+    padding: 10px 15px;             /* Space around the text */
+    border-radius: 5px;             /* Slightly rounded corners */
+    text-decoration: none;          /* Remove underline */
+    font-weight: normal;            /* Regular font weight */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hover Effect */
 nav a:hover {
-    background-color: #0056b3;  /* Darker blue on hover */
-    transform: translateY(-3px); /* Slight lift effect */
+    background-color: #e0e0e0; /* Light gray background on hover */
+    color: #000;               /* Darker text on hover */
 }
+
 
 section {
     padding: 40px 0;
