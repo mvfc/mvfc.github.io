@@ -140,6 +140,37 @@ footer p {
     font-size: 1rem;
 }
 
+/* Layout for Projects and Skills */
+.projects-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.project-card, .skill-card {
+    flex: 0 1 calc(50% - 20px);  /* Two cards per row with space between */
+    box-sizing: border-box;
+}
+
+.project h3, .skill-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Layout for Contact and About Me */
+.contact-about-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.contact-card, .about-me-card {
+    flex: 0 1 calc(50% - 20px);  /* Two cards side by side */
+    box-sizing: border-box;
+}
+
 /* Specific Styles for LinkedIn Button */
 .linkedin-button {
     display: inline-flex;
@@ -200,6 +231,14 @@ footer p {
 
     .container {
         width: 90%;  /* Allow more width on smaller screens */
+    }
+
+    .projects-skills-container, .contact-about-container {
+        flex-direction: column;
+    }
+
+    .project-card, .skill-card, .contact-card, .about-me-card {
+        flex: 0 1 100%;  /* Stack cards vertically on small screens */
     }
 
     nav ul {
