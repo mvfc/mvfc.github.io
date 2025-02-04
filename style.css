@@ -16,9 +16,9 @@ body {
 }
 
 .container {
-    width: 50%;  /* Changed width to 50% */
+    width: 50%;          /* Confines content to 50% of the screen */
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto;       /* Centers the container */
     padding: 20px;
     flex-grow: 1;
 }
@@ -146,16 +146,27 @@ footer p {
 /* Layout for About Me and Contact */
 .about-contact-container {
     display: flex;
-    gap: 30px;
+    gap: 30px;               /* Adds space between the cards */
     justify-content: space-between;
-    margin-bottom: 40px;
-    flex-wrap: wrap;  /* Ensure they can wrap on smaller screens */
+    flex-wrap: wrap;          /* Allows wrapping on small screens */
+    width: 100%;              /* Ensures it fits within the container */
+    box-sizing: border-box;   /* Consistent sizing */
 }
 
 .about-card, .contact-card {
-    flex: 1;
-    min-width: 280px;  /* Ensure minimum width on small screens */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex: 1;                  /* Equal size for both cards */
+    min-width: 280px;         /* Minimum size to prevent shrinking too much */
+    max-width: calc(50% - 15px); /* Ensure two cards fit side-by-side with gap */
     box-sizing: border-box;
+}
+
+.about-card:hover, .contact-card:hover {
+    transform: translateY(-5px);
 }
 
 /* Layout for Projects and Skills */
@@ -239,7 +250,7 @@ footer p {
     }
 
     .about-card, .contact-card {
-        flex: 0 1 100%;  /* Stack cards vertically on small screens */
+        max-width: 100%;  /* Stack full-width on mobile */
     }
 
     .projects-skills-container {
